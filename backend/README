@@ -14,7 +14,7 @@ Este módulo é responsável por fornecer a API para o gerenciamento dos dados e
 Se você já clonou o projeto completo (README na raiz), acesse a pasta `backend`:
 
 ```bash
-cd seu-repo/backend
+cd meta/backend
 ```
 
 

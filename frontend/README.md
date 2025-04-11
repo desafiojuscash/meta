@@ -14,7 +14,7 @@ Este módulo foi desenvolvido com React e Vite, fornecendo uma interface interat
 Após clonar o repositório completo, acesse a pasta do frontend:
 
 ```
-cd seu-repo/frontend
+cd meta/frontend
 ```
 
 ## ⚙️ Configuração do Ambiente

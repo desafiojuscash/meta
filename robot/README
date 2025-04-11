@@ -15,7 +15,7 @@ As coletas são programadas para ocorrer diariamente a partir de 17/03/2025. As 
 ## 📥 Clonando o Repositório
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repo.git
+git clone git@github.com:desafiojuscash/meta.git
 cd seu-repo
 ```
 
