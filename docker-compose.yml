@@ -1,0 +1,53 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:15
+    container_name: postgres_db
+    restart: always
+    environment:
+      POSTGRES_DB: myappdb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  backend:
+    build:
+      context: ./backend
+    container_name: backend_service
+    restart: always
+    depends_on:
+      - db
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./backend:/usr/src/app
+    env_file:
+      - ./backend/.env.local
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: frontend_service
+    restart: always
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/app
+    command: ["npm", "run", "dev", "--", "--host"]
+
+  robot:
+    build:
+      context: ./robot
+    container_name: robot_task
+    volumes:
+      - ./robot:/app
+    env_file:
+      - ./robot/.env.local
+    entrypoint: ["sleep", "infinity"]
+    
+volumes:
+  postgres_data:
