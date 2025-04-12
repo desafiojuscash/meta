@@ -58,3 +58,11 @@ Ou, para especificar um período de coleta:
 docker exec -it robot_task python src/main.py --startDate=17/03/2025 --endDate=10/04/2025
 ```
 > **Atenção:**  Verifique e atualize os arquivos de ambiente (.env.local) dos módulos conforme as variáveis necessárias para a operação.
+
+## 🚀 Endpoints de produção
+
+- [https://13.58.212.214.sslip.io](https://13.58.212.214.sslip.io) (API BACKEND)
+- [https://main.dxh3c1lw6fb50.amplifyapp.com/](https://main.dxh3c1lw6fb50.amplifyapp.com/) ( FRONTEND )
+
+## 🔧 Domentações Relacionadas
+Documentações adicionais podem ser acessadas nesse [drive](https://drive.google.com/drive/folders/1LO6GcvpWQZaLgljkOsfEqzUTbsUwqCHQ?usp=sharing)

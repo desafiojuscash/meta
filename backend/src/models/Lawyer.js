@@ -23,7 +23,13 @@ export default (sequelize) => {
           lawyer.name = lawyer.name.toLowerCase();
         }
       }
-    }
+    },
+    indexes: [
+      {
+        name: "idx_document",
+        fields: ["document"]
+      }
+    ]
   });
 
   return Lawyer;
