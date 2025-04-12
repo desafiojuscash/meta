@@ -65,4 +65,4 @@ docker exec -it robot_task python src/main.py --startDate=17/03/2025 --endDate=1
 - [https://main.dxh3c1lw6fb50.amplifyapp.com/](https://main.dxh3c1lw6fb50.amplifyapp.com/) ( FRONTEND )
 
 ## 🔧 Domentações Relacionadas
-Documentações adicionais podem ser acessadas nesse [drive](https://drive.google.com/drive/folders/1LO6GcvpWQZaLgljkOsfEqzUTbsUwqCHQ?usp=sharing)
+Documentações adicionais podem ser acessadas nesse [drive](https://drive.google.com/drive/folders/1LO6GcvpWQZaLgljkOsfEqzUTbsUwqCHQ?usp=sharing) como exemplos de requests na collection do postman, diagramas de dados, swaggers e mais.
